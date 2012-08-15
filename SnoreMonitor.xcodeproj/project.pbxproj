@@ -15,6 +15,8 @@
 		761D2A29140CA8D5003188DB /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D2A28140CA8D5003188DB /* CFNetwork.framework */; };
 		761D2A2D140CAA78003188DB /* SoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 761D2A2C140CAA78003188DB /* SoundManager.m */; };
 		76619A3F13B2F2F60002043A /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76619A3E13B2F2F60002043A /* SessionManager.m */; };
+		76AEF10615DB4BFF003B974D /* GradientFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AEF10415DB4BFF003B974D /* GradientFill.png */; };
+		76AEF10715DB4BFF003B974D /* raindrops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76AEF10515DB4BFF003B974D /* raindrops.jpg */; };
 		76AF953413AD1F41009354BF /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF952F13AD1F41009354BF /* 20-gear2.png */; };
 		76AF953513AD1F41009354BF /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF953013AD1F41009354BF /* 53-house.png */; };
 		76AF953613AD1F41009354BF /* 65-note.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF953113AD1F41009354BF /* 65-note.png */; };
@@ -63,6 +65,8 @@
 		761D2A2C140CAA78003188DB /* SoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundManager.m; sourceTree = "<group>"; };
 		76619A3D13B2F2F60002043A /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
 		76619A3E13B2F2F60002043A /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
+		76AEF10415DB4BFF003B974D /* GradientFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GradientFill.png; sourceTree = "<group>"; };
+		76AEF10515DB4BFF003B974D /* raindrops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raindrops.jpg; sourceTree = "<group>"; };
 		76AF952F13AD1F41009354BF /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
 		76AF953013AD1F41009354BF /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		76AF953113AD1F41009354BF /* 65-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "65-note.png"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 		76AF952E13AD1F41009354BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76AEF10415DB4BFF003B974D /* GradientFill.png */,
+				76AEF10515DB4BFF003B974D /* raindrops.jpg */,
 				761D2A15140CA54A003188DB /* final.wav */,
 				761D2A16140CA54A003188DB /* first.wav */,
 				76F99264140DEE79005208D8 /* Default.png */,
@@ -259,6 +265,9 @@
 /* Begin PBXProject section */
 		88AFC18E13A9228D00705B90 /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
 			buildConfigurationList = 88AFC19113A9228D00705B90 /* Build configuration list for PBXProject "SnoreMonitor" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -297,6 +306,8 @@
 				761D2A18140CA54A003188DB /* first.wav in Resources */,
 				76F99265140DEE79005208D8 /* Default.png in Resources */,
 				76F99278140F399B005208D8 /* HelpView.xib in Resources */,
+				76AEF10615DB4BFF003B974D /* GradientFill.png in Resources */,
+				76AEF10715DB4BFF003B974D /* raindrops.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,9 +391,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyMonitor/SnoreMonitor-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BabyMonitor/SnoreMonitor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/GoogleAdMobAdsSDK\"",
@@ -434,9 +445,9 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyMonitor/SnoreMonitor-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BabyMonitor/SnoreMonitor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/GoogleAdMobAdsSDK\"",
@@ -455,9 +466,9 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyMonitor/SnoreMonitor-Prefix.pch";
-				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "BabyMonitor/SnoreMonitor-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../Downloads/GoogleAdMobAdsSDK\"",
