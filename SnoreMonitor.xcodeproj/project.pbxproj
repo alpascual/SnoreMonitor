@@ -17,6 +17,7 @@
 		76619A3F13B2F2F60002043A /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 76619A3E13B2F2F60002043A /* SessionManager.m */; };
 		76AEF10615DB4BFF003B974D /* GradientFill.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AEF10415DB4BFF003B974D /* GradientFill.png */; };
 		76AEF10715DB4BFF003B974D /* raindrops.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 76AEF10515DB4BFF003B974D /* raindrops.jpg */; };
+		76AEF10A15DB4DF3003B974D /* MovieTransportBackground-Chapters.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AEF10915DB4DF3003B974D /* MovieTransportBackground-Chapters.png */; };
 		76AF953413AD1F41009354BF /* 20-gear2.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF952F13AD1F41009354BF /* 20-gear2.png */; };
 		76AF953513AD1F41009354BF /* 53-house.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF953013AD1F41009354BF /* 53-house.png */; };
 		76AF953613AD1F41009354BF /* 65-note.png in Resources */ = {isa = PBXBuildFile; fileRef = 76AF953113AD1F41009354BF /* 65-note.png */; };
@@ -67,6 +68,7 @@
 		76619A3E13B2F2F60002043A /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
 		76AEF10415DB4BFF003B974D /* GradientFill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GradientFill.png; sourceTree = "<group>"; };
 		76AEF10515DB4BFF003B974D /* raindrops.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = raindrops.jpg; sourceTree = "<group>"; };
+		76AEF10915DB4DF3003B974D /* MovieTransportBackground-Chapters.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MovieTransportBackground-Chapters.png"; sourceTree = "<group>"; };
 		76AF952F13AD1F41009354BF /* 20-gear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "20-gear2.png"; sourceTree = "<group>"; };
 		76AF953013AD1F41009354BF /* 53-house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "53-house.png"; sourceTree = "<group>"; };
 		76AF953113AD1F41009354BF /* 65-note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "65-note.png"; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 		76AF952E13AD1F41009354BF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				76AEF10915DB4DF3003B974D /* MovieTransportBackground-Chapters.png */,
 				76AEF10415DB4BFF003B974D /* GradientFill.png */,
 				76AEF10515DB4BFF003B974D /* raindrops.jpg */,
 				761D2A15140CA54A003188DB /* final.wav */,
@@ -308,6 +311,7 @@
 				76F99278140F399B005208D8 /* HelpView.xib in Resources */,
 				76AEF10615DB4BFF003B974D /* GradientFill.png in Resources */,
 				76AEF10715DB4BFF003B974D /* raindrops.jpg in Resources */,
+				76AEF10A15DB4DF3003B974D /* MovieTransportBackground-Chapters.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -388,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BabyMonitor/SnoreMonitor-Prefix.pch";
@@ -400,6 +405,7 @@
 					"\"$(SRCROOT)/../GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = SnoreMonitor;
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -441,6 +447,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -454,6 +461,7 @@
 					"\"$(SRCROOT)/../GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = SnoreMonitor;
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -462,6 +470,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -475,6 +484,7 @@
 					"\"$(SRCROOT)/../GoogleAdMobAdsSDK\"",
 				);
 				PRODUCT_NAME = SnoreMonitor;
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
