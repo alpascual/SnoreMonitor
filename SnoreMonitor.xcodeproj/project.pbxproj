@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		760ED9E91608199C00A98F56 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 760ED9E81608199C00A98F56 /* Default-568h@2x.png */; };
 		761D2A11140C9FA2003188DB /* MeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 761D2A10140C9FA2003188DB /* MeterView.m */; };
 		761D2A13140C9FF0003188DB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 761D2A12140C9FF0003188DB /* QuartzCore.framework */; };
 		761D2A17140CA54A003188DB /* final.wav in Resources */ = {isa = PBXBuildFile; fileRef = 761D2A15140CA54A003188DB /* final.wav */; };
@@ -50,6 +51,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		760ED9E81608199C00A98F56 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		761D2A0F140C9FA2003188DB /* MeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeterView.h; sourceTree = "<group>"; };
 		761D2A10140C9FA2003188DB /* MeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeterView.m; sourceTree = "<group>"; };
 		761D2A12140C9FF0003188DB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -163,6 +165,7 @@
 		88AFC18C13A9228D00705B90 = {
 			isa = PBXGroup;
 			children = (
+				760ED9E81608199C00A98F56 /* Default-568h@2x.png */,
 				76F9926C140DF851005208D8 /* SoundDelegate.h */,
 				761D2A2A140CA9CD003188DB /* AudioUnit.framework */,
 				761D2A28140CA8D5003188DB /* CFNetwork.framework */,
@@ -269,7 +272,7 @@
 		88AFC18E13A9228D00705B90 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 			};
 			buildConfigurationList = 88AFC19113A9228D00705B90 /* Build configuration list for PBXProject "SnoreMonitor" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -312,6 +315,7 @@
 				76AEF10615DB4BFF003B974D /* GradientFill.png in Resources */,
 				76AEF10715DB4BFF003B974D /* raindrops.jpg in Resources */,
 				76AEF10A15DB4DF3003B974D /* MovieTransportBackground-Chapters.png in Resources */,
+				760ED9E91608199C00A98F56 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
