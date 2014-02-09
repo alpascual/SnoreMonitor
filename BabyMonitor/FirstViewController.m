@@ -21,14 +21,14 @@
     [super viewDidLoad];
     
     //UIColor *greenColor = [UIColor colorWithRed:29.0/255.0 green:207.0/255.0 blue:0.0 alpha:1.0];
-    UIColor *redColor = [UIColor colorWithRed:245.0/255.0 green:76.0/255.0 blue:76.0/255.0 alpha:1.0];
-    
-    self.sector3 = [SAMultisectorSector sectorWithColor:redColor maxValue:100.0];
-   
-    self.sector3.tag = 2;
-    self.sector3.endValue = 1.0;
- 
-    [self.multisectorControl addSector:self.sector3];
+//    UIColor *redColor = [UIColor colorWithRed:245.0/255.0 green:76.0/255.0 blue:76.0/255.0 alpha:1.0];
+//    
+//    self.sector3 = [SAMultisectorSector sectorWithColor:redColor maxValue:100.0];
+//   
+//    self.sector3.tag = 2;
+//    self.sector3.endValue = 1.0;
+// 
+//    [self.multisectorControl addSector:self.sector3];
     
     // Create a view of the standard size at the bottom of the screen.
     /*bannerView_ = [[GADBannerView alloc]

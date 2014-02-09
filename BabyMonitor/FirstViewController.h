@@ -37,9 +37,9 @@
     SoundManager *sound;
 }
 
-@property (nonatomic,retain) IBOutlet UIProgressView *progress;
-@property (nonatomic,retain) IBOutlet UIButton *startButton;
-@property (nonatomic, retain) IBOutlet MeterView *voltmeterView;
+@property (nonatomic,strong) IBOutlet UIProgressView *progress;
+@property (nonatomic,strong) IBOutlet UIButton *startButton;
+@property (nonatomic, strong) IBOutlet MeterView *voltmeterView;
 @property (nonatomic,retain) SoundManager *sound;
 @property (strong, nonatomic) IBOutlet SAMultisectorControl *multisectorControl;
 @property (strong, nonatomic) SAMultisectorSector *sector3;
