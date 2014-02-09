@@ -22,6 +22,8 @@
 #import "SCListener.h"
 #import "HelpView.h"
 
+#import "SAMultisectorControl.h"
+
 
 @interface FirstViewController : UIViewController <SoundDelegate>{
 
@@ -39,6 +41,8 @@
 @property (nonatomic,retain) IBOutlet UIButton *startButton;
 @property (nonatomic, retain) IBOutlet MeterView *voltmeterView;
 @property (nonatomic,retain) SoundManager *sound;
+@property (strong, nonatomic) IBOutlet SAMultisectorControl *multisectorControl;
+@property (strong, nonatomic) SAMultisectorSector *sector3;
 
 -(IBAction) startMonitoring;
 -(void) makeTheCall:(NSInteger)type;

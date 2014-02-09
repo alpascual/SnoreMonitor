@@ -173,20 +173,11 @@ static void listeningCallback(void *inUserData, AudioQueueRef inAQ, AudioQueueBu
 	return self;
 }
 
-- (id)retain {
-	return self;
-}
+
 
 - (unsigned)retainCount {
 	return UINT_MAX;
 }
 
-- (void)release {
-	// Do nothing.
-}
-
-- (id)autorelease {
-	return self;
-}
 
 @end

@@ -18,7 +18,17 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
-    [super viewDidLoad]; 
+    [super viewDidLoad];
+    
+    //UIColor *greenColor = [UIColor colorWithRed:29.0/255.0 green:207.0/255.0 blue:0.0 alpha:1.0];
+    UIColor *redColor = [UIColor colorWithRed:245.0/255.0 green:76.0/255.0 blue:76.0/255.0 alpha:1.0];
+    
+    self.sector3 = [SAMultisectorSector sectorWithColor:redColor maxValue:100.0];
+   
+    self.sector3.tag = 2;
+    self.sector3.endValue = 1.0;
+ 
+    [self.multisectorControl addSector:self.sector3];
     
     // Create a view of the standard size at the bottom of the screen.
     /*bannerView_ = [[GADBannerView alloc]
@@ -38,6 +48,7 @@
     // Initiate a generic request to load it with an ad.
     [bannerView_ loadRequest:[GADRequest request]];*/
     
+    // Old monitor
     self.voltmeterView.textLabel.text = @"Snore";
 	self.voltmeterView.textLabel.font = [UIFont fontWithName:@"HelveticaNeue-BoldItalic" size:18.0];
 	self.voltmeterView.lineWidth = 2.5;
@@ -58,6 +69,8 @@
     
     [progress setProgress:ave];
     self.voltmeterView.value = ave * 10;
+    self.sector3.endValue = ave * 10;
+    
     
     NSUserDefaults *myPrefs = [NSUserDefaults standardUserDefaults];
     if ( [myPrefs stringForKey:@"sensitive"] != nil )
@@ -208,14 +221,6 @@
 }
 
 
-- (void)dealloc
-{
-    [super dealloc];
-    
-    [levelTimer release];
-	[recorder release];
-    //[bannerView_ release];
-}
 
 -(IBAction) startMonitoring
 {

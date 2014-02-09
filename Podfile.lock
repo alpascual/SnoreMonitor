@@ -1,0 +1,10 @@
+PODS:
+  - SAMultisectorControl (1.0.1)
+
+DEPENDENCIES:
+  - SAMultisectorControl
+
+SPEC CHECKSUMS:
+  SAMultisectorControl: d9d487f831dc10d983e434c2d84232e707089ec6
+
+COCOAPODS: 0.29.0

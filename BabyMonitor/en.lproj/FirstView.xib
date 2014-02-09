@@ -7,10 +7,11 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstViewController">
             <connections>
+                <outlet property="multisectorControl" destination="16" id="o62-pH-ZsO"/>
                 <outlet property="progress" destination="9" id="11"/>
                 <outlet property="startButton" destination="49" id="63"/>
                 <outlet property="view" destination="1" id="3"/>
-                <outlet property="voltmeterView" destination="16" id="17"/>
+                <outlet property="voltmeterView" destination="16" id="mWI-cD-wwe"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -18,20 +19,13 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" image="GradientFill.png" translatesAutoresizingMaskIntoConstraints="NO" id="22">
+                <imageView userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" image="GradientFill.png" translatesAutoresizingMaskIntoConstraints="NO" id="22">
                     <rect key="frame" x="0.0" y="0.0" width="520" height="480"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="520" id="66"/>
-                    </constraints>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49">
-                    <rect key="frame" x="0.0" y="281" width="320" height="47"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49">
+                    <rect key="frame" x="52" y="274" width="218" height="49"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="267" id="52"/>
-                        <constraint firstAttribute="height" constant="47" id="53"/>
-                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                     <size key="titleShadowOffset" width="0.0" height="-1"/>
                     <state key="normal" title="Start Monitoring" backgroundImage="ipad-button-blue.png">
@@ -45,46 +39,32 @@
                         <action selector="startMonitoring" destination="-1" eventType="touchDown" id="62"/>
                     </connections>
                 </button>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" text="Monitor" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5">
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" text="Monitor" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="5">
                     <rect key="frame" x="48" y="58" width="211" height="43"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="211" id="45"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="36"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                     <size key="shadowOffset" width="-1" height="-1"/>
                 </label>
-                <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" progress="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="9">
-                    <rect key="frame" x="43" y="336" width="236" height="3"/>
+                <progressView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" progressViewStyle="bar" progress="0.10000000149011612" translatesAutoresizingMaskIntoConstraints="NO" id="9">
+                    <rect key="frame" x="43" y="345" width="236" height="3"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="236" id="23"/>
-                    </constraints>
                 </progressView>
-                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16" customClass="MeterView">
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16" customClass="MeterView">
                     <rect key="frame" x="9" y="139" width="289" height="134"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                 </view>
-                <adBannerView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="18">
+                <adBannerView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="18">
                     <rect key="frame" x="0.0" y="0.0" width="480" height="32"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="480" id="67"/>
-                        <constraint firstAttribute="height" constant="32" id="68"/>
-                    </constraints>
                 </adBannerView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="20">
                     <rect key="frame" x="264" y="444" width="42" height="28"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="42" id="47"/>
-                        <constraint firstAttribute="height" constant="28" id="48"/>
-                    </constraints>
                     <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
                     <state key="normal" image="53-house.png">
                         <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -98,25 +78,6 @@
                     </connections>
                 </button>
             </subviews>
-            <constraints>
-                <constraint firstAttribute="trailing" secondItem="20" secondAttribute="trailing" constant="14" id="24"/>
-                <constraint firstItem="22" firstAttribute="top" secondItem="1" secondAttribute="top" id="27"/>
-                <constraint firstItem="9" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="43" id="28"/>
-                <constraint firstItem="16" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="9" id="29"/>
-                <constraint firstItem="22" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="32"/>
-                <constraint firstAttribute="bottom" secondItem="20" secondAttribute="bottom" constant="8" id="35"/>
-                <constraint firstItem="16" firstAttribute="top" secondItem="1" secondAttribute="top" constant="139" id="36"/>
-                <constraint firstItem="18" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="37"/>
-                <constraint firstItem="18" firstAttribute="top" secondItem="1" secondAttribute="top" id="39"/>
-                <constraint firstItem="22" firstAttribute="bottom" secondItem="1" secondAttribute="bottom" id="40"/>
-                <constraint firstItem="16" firstAttribute="centerX" secondItem="5" secondAttribute="centerX" id="41"/>
-                <constraint firstItem="49" firstAttribute="top" secondItem="16" secondAttribute="bottom" constant="8" symbolic="YES" id="55"/>
-                <constraint firstItem="9" firstAttribute="top" secondItem="49" secondAttribute="bottom" constant="8" symbolic="YES" id="56"/>
-                <constraint firstItem="49" firstAttribute="centerX" secondItem="22" secondAttribute="centerX" id="60"/>
-                <constraint firstItem="5" firstAttribute="leading" secondItem="1" secondAttribute="leading" constant="48" id="61"/>
-                <constraint firstItem="5" firstAttribute="top" secondItem="1" secondAttribute="top" constant="58" id="64"/>
-                <constraint firstItem="49" firstAttribute="top" secondItem="1" secondAttribute="top" constant="281" id="65"/>
-            </constraints>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
         </view>
