@@ -69,36 +69,6 @@
             endingLineNumber = "119"
             landmarkName = "-playQueue"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SoundManager playQueue]"
-                  moduleName = "SnoreMonitor"
-                  urlString = "file:///Users/alpascual/Pet%20Projects/2011/SnoreMonitor/BabyMonitor/SoundManager.m"
-                  timestampString = "413612754.337479"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SoundManager playQueue]"
-                  moduleName = "SnoreMonitor"
-                  urlString = "file:///Users/alpascual/Pet%20Projects/2011/SnoreMonitor/BabyMonitor/SoundManager.m"
-                  timestampString = "413612754.337712"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "524">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -133,36 +103,6 @@
             endingLineNumber = "118"
             landmarkName = "-playQueue"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SoundManager playQueue]"
-                  moduleName = "SnoreMonitor"
-                  urlString = "file:///Users/alpascual/Pet%20Projects/2011/SnoreMonitor/BabyMonitor/SoundManager.m"
-                  timestampString = "413612754.338202"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "26">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "-[SoundManager playQueue]"
-                  moduleName = "SnoreMonitor"
-                  urlString = "file:///Users/alpascual/Pet%20Projects/2011/SnoreMonitor/BabyMonitor/SoundManager.m"
-                  timestampString = "413612754.338432"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "119"
-                  endingLineNumber = "119"
-                  offsetFromSymbolStart = "524">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
